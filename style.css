@@ -97,6 +97,22 @@ body {
   cursor: pointer;
 }
 
+.btn-reload {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--button-main-color);
+  width: 200px;
+  height: 80px;
+  color: white;
+  border-radius: 15px 0 0 0;
+  border-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -128,6 +144,11 @@ p {
 }
 
 .btn-choices:hover {
+  background: var(--button-choices-hover);
+  color: white;
+}
+
+.selected {
   background: var(--button-choices-hover);
   color: white;
 }

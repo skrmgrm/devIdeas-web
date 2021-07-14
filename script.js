@@ -23,6 +23,22 @@ const quiz = [
     d: "JavaScript",
     correctAnswer: "d",
   },
+  {
+    question: "Pila imong grado karon nga sem?",
+    a: "1.1",
+    b: "2.4",
+    c: "1.5",
+    d: "5.0",
+    correctAnswer: "d",
+  },
+  {
+    question: "Igna salamat master",
+    a: "dili ko",
+    b: "dili ko ",
+    c: "salamat master",
+    d: "dili ko",
+    correctAnswer: "c",
+  },
 ];
 
 let questionCounter = 0;
@@ -92,6 +108,9 @@ function getAnswer(answer) {
   if (answer == quiz[questionCounter].correctAnswer) {
     score++;
     currentAnswer = undefined;
+    alert("Correct!");
     console.log(`score: ${score}`);
+  } else {
+    alert("Boo!");
   }
 }

@@ -108,7 +108,7 @@ function getAnswer(answer) {
   if (answer == quiz[questionCounter].correctAnswer) {
     score++;
     currentAnswer = undefined;
-    alert("Correct!");
+    alert("Nice one baby!");
     console.log(`score: ${score}`);
   } else {
     alert("Boo!");

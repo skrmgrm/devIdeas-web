@@ -58,6 +58,9 @@ body {
 }
 
 .btn-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--button-main-color);
   align-self: center;
   width: 230px;
@@ -69,6 +72,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .btn-start:hover,
@@ -118,6 +122,10 @@ a {
   color: white;
 }
 
+#start-link {
+  padding: 80px 200px;
+}
+
 /* main */
 
 p {
@@ -132,14 +140,14 @@ p {
   margin-top: 15px;
   background: var(--button-choices-color);
   align-self: center;
-  width: 300px;
-  height: 40px;
+  width: 20em;
+  height: 2.5em;
   color: var(--text-dark-color);
   border-radius: 15px;
   border-style: none;
   font-size: 17px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
   cursor: pointer;
 }
 
@@ -201,4 +209,15 @@ input:focus {
 .names-container {
   width: 50%;
   text-align: start;
+}
+
+footer {
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  right: 45%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
